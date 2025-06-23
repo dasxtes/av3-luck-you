@@ -1,31 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
 
+:root {
+    --branco: white;
+    --cor-de-fundo: #3572EF;
+    --cor-de-senha: #910A67;
+    --fundo-texto: #3C0753;
+    --borda: #720455;
+    --fonte: 'Embed code', sans-serif;
+}
 
-.root{
-    --branco:white;
-    --cor-de-fundo:rgb(19, 84, 122);
-    --fundo-senha:rgb(187, 80, 30);
-    --fundo-texto:rgb(3, 3, 49);
-    --borda:rgb(95, 87, 87);
-    --fonte:'Roboto', sans-serif;
+* {
+    font-weight: 500;
 }
-*{
-    font-weight: 400;
-}
-body{
+
+body {
     color: var(--branco);
-    background-color:var(--cor-de-fundo);
+    background-color: var(--cor-de-fundo);
     font-family: var(--fonte);
 }
-
-.titulo-principal{
-
-    font-family:var(--fonte);
-    font-size: 320px
-
+.titulo_principal{
+    font-family: var(--fonte);
+    font-size: 32px;
 }
-.titulo-secundario{
+.titulo_secundario{
+    font-size: 24px;
+}
+.conteudo_titulo{
     text-align: center;
     margin-top: 80px;
 
+}
+.cadeado_conteudo{
+    width: 100px;
+}
+.conteudo_senha{
+    margin: top 80px;
+    background: var(--fundo-senha);
+    padding: 24px;
+    border-bottom: 6px dotted var(--borda);
+}
+#campo_senha{
+    background-color: var(--fundo-senha);
+    border:none;
+    color:var(--branco);
+    font-size: 40px;
+    width: 70%;
+}
+#campo_senha:focus{
+    outline:none;
+}
+.conteudo_senhas{
+    max-width: 1200px;
+    margin: 0 auto;
 }
